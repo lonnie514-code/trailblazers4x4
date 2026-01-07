@@ -20,32 +20,29 @@
         
         section { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
         .about { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; text-align: center; }
-        .about-card img { width: 100%; border-radius: 10px; height: 200px; object-fit: cover; }
+        .about-card img { width: 100%; border-radius: 10px; height: 220px; object-fit: cover; }
         
         .events { background: #222; }
         .event-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
         .event-card { background: #333; padding: 1.5rem; border-radius: 10px; }
         
-        .fleet { overflow-x: auto; white-space: nowrap; }
-        .fleet img { height: 300px; margin-right: 1rem; border-radius: 10px; display: inline-block; object-fit: cover; }
+        .fleet { overflow-x: auto; white-space: nowrap; padding: 1rem 0; }
+        .fleet img { height: 300px; width: auto; margin-right: 1rem; border-radius: 10px; display: inline-block; object-fit: cover; }
         
         .testimonials { background: #222; text-align: center; }
-        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-        .testimonial-grid img { max-width: 100%; border-radius: 10px; }
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
         
         .final-cta { background: #ff6600; text-align: center; padding: 4rem; }
         
         footer { background: #000; padding: 2rem; text-align: center; font-size: 0.9rem; }
         
-        /* Form styles */
         .membership-form { background: rgba(0,0,0,0.7); padding: 3rem; border-radius: 10px; max-width: 800px; margin: 2rem auto; }
         .membership-form h2 { text-align: center; margin-bottom: 2rem; }
         .form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; }
         .form-group { display: flex; flex-direction: column; }
         .form-group label { margin-bottom: 0.5rem; font-weight: bold; }
         .form-group input, .form-group textarea { padding: 0.8rem; border-radius: 5px; border: none; background: #333; color: #fff; }
-        .form-group input::placeholder, .form-group textarea::placeholder { color: #aaa; }
-        .submit-btn { background: #fff; color: #ff6600; font-weight: bold; cursor: pointer; margin-top: 2rem; align-self: center; }
+        .submit-btn { background: #fff; color: #ff6600; font-weight: bold; cursor: pointer; margin-top: 2rem; align-self: center; padding: 1rem 2rem; font-size: 1.2rem; }
     </style>
 </head>
 <body>
@@ -56,71 +53,67 @@
             <div class="nav-links">
                 <a href="#">Home</a>
                 <a href="#">Upcoming Runs</a>
-                <a href="#">Join Us</a>
+                <a href="#what-we-do">What We Do</a>
                 <a href="#membership-form">Join Now</a>
                 <a href="#">Gallery</a>
-                <a href="#">Forum</a>
                 <a href="#">Contact</a>
             </div>
         </nav>
     </header>
 
-    <section class="hero" style="background-image: url('images/hero-fishing-man.jpg');">
-        <!-- Replace 'images/hero-fishing-man.jpg' with the actual path to your first uploaded photo (man holding trout) -->
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('images/fishing-man-trout.jpg');">
         <div class="hero-content">
             <h1>GET OUT THERE. TOGETHER.</h1>
             <p>Join TrailBlazers 4×4 – Your local community for epic trails, skill-building, and unbreakable friendships.</p>
-            <p>All skill levels • Family-friendly • Responsible off-roading</p>
+            <p>All skill levels • Family-friendly • Dogs welcome • Responsible off-roading</p>
             <a href="#membership-form" class="cta">Join the Club Today</a>
             <a href="#" class="cta" style="background: #333;">See Upcoming Runs</a>
         </div>
     </section>
 
+    <!-- About Section -->
     <section class="about">
         <div class="about-card">
-            <img src="images/dog-in-utv.jpg" alt="Epic Adventures">
-            <!-- Replace with path to photo of dog looking out of the red UTV -->
+            <img src="images/dog-in-red-utv.jpg" alt="Dog enjoying the ride">
             <h2>Epic Adventures</h2>
             <p>Guided trail runs from easy green lanes to hardcore challenges.</p>
         </div>
         <div class="about-card">
-            <img src="images/couple-in-utv.jpg" alt="Build Skills">
-            <!-- Replace with path to photo of man and woman in the orange UTV -->
+            <img src="images/couple-in-utv.jpg" alt="Couple on the trail">
             <h2>Build Skills & Confidence</h2>
             <p>Workshops, recovery training, and spotting sessions.</p>
         </div>
         <div class="about-card">
-            <img src="images/boy-on-truck.jpg" alt="Great People">
-            <!-- Replace with path to photo of boy standing on blue Tacoma bed -->
+            <img src="images/boy-on-blue-tacoma.jpg" alt="Kid having fun off-road">
             <h2>Great People & Good Times</h2>
             <p>Campouts, BBQs, and stories around the fire.</p>
         </div>
     </section>
 
-    <section id="what-we-do" style="background: #1a1a1a; padding: 5rem 2rem;">
+    <!-- What We Do Section -->
+    <section id="what-we-do" style="background: #1a1a1a;">
         <h2 style="text-align: center; color: #ff6600; margin-bottom: 3rem; font-size: 2.5rem;">What We Do – Every Month</h2>
         <div class="about" style="max-width: 1100px; margin: 0 auto;">
             <div class="about-card">
-                <img src="images/utvs-in-mud.jpg" alt="Trail Run">
-                <!-- Replace with path to photo of two UTVs in muddy area -->
+                <img src="images/muddy-utvs.jpg" alt="UTVs playing in the mud">
                 <h3>Guided Trail Runs</h3>
                 <p>We hit the trails together every month – easy family rides to challenging rock crawls.</p>
             </div>
             <div class="about-card">
-                <img src="images/couple-in-utv.jpg" alt="Training Day">
-                <!-- Reuse or replace with another action shot -->
+                <img src="images/couple-in-utv.jpg" alt="Learning on the trail">
                 <h3>Skill-Building Days</h3>
                 <p>Learn winching, tire repair, proper spotting, and safe driving techniques.</p>
             </div>
             <div class="about-card">
-                <img src="images/landscape-reflection.jpg" alt="Campout">
-                <!-- Replace with path to scenic landscape with water reflection -->
+                <img src="images/mountain-lake-view.jpg" alt="Scenic camp spot">
                 <h3>Campouts & Socials</h3>
-                <p>Overnight trips, trail-side BBQs, and club meetups.</p>
+                <p>Overnight trips, trail-side BBQs, and campfire stories.</p>
             </div>
         </div>
     </section>
 
+    <!-- Upcoming Events -->
     <section class="events">
         <h2 style="text-align: center;">Upcoming Events</h2>
         <div class="event-grid">
@@ -142,25 +135,21 @@
         </div>
     </section>
 
+    <!-- Meet the Fleet -->
     <section class="fleet">
         <h2 style="text-align: center;">Meet the Fleet</h2>
         <div>
-            <img src="images/red-utv-mud.jpg" alt="Red UTV in mud">
-            <!-- Replace with path to close-up of red UTV in mud -->
-            <img src="images/black-utv-mud.jpg" alt="Black UTV in mud">
-            <!-- Replace with path to close-up of black/blue UTV in mud -->
-            <img src="images/blue-tacoma.jpg" alt="Blue Tacoma">
-            <!-- Replace with path to photo of blue Tacoma -->
-            <img src="images/orange-canam.jpg" alt="Orange Can-Am">
-            <!-- Replace with path to photo of orange Can-Am in mountains -->
+            <img src="images/muddy-utvs.jpg" alt="Muddy UTVs">
+            <img src="images/blue-tacoma-dirty.jpg" alt="Blue Tacoma on trail">
+            <img src="images/orange-canam-mountains.jpg" alt="Can-Am in the mountains">
+            <img src="images/red-utv-mud-closeup.jpg" alt="Red UTV in action">
         </div>
     </section>
 
+    <!-- Recent Adventures -->
     <section class="testimonials">
         <h2>Recent Adventures</h2>
-        <img src="images/mountain-trail-view.jpg" alt="Group adventure"
-             style="max-width:100%; border-radius:10px;">
-        <!-- Replace with path to scenic mountain trail photo -->
+        <img src="images/mountain-lake-view.jpg" alt="Beautiful mountain lake view" style="max-width:100%; border-radius:10px;">
         <div class="testimonial-grid">
             <div>
                 <p>“Made lifelong friends and pushed my rig further than ever!” – Alex R.</p>
@@ -171,7 +160,8 @@
         </div>
     </section>
 
-    <section id="membership-form" style="background: #222; padding: 5rem 2rem;">
+    <!-- Membership Form -->
+    <section id="membership-form" style="background: #222;">
         <div class="membership-form">
             <h2>Membership Application</h2>
             <form action="#" method="POST">
@@ -230,6 +220,7 @@
         </div>
     </section>
 
+    <!-- Final CTA -->
     <section class="final-cta">
         <h2>Ready to Hit the Trails?</h2>
         <p>Join for just $50/year – Access exclusive runs, training, and community.</p>
